@@ -3283,5 +3283,5 @@ Parrot_str_gc_unregister(PARROT_INTERP, ARGIN(STRING *s))
  * Local variables:
  *   c-file-style: "parrot"
  * End:
- * vim: expandtab shiftwidth=4:
+ * vim: expandtab shiftwidth=4 cinoptions='\:2=2' :
  */
