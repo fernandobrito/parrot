@@ -516,6 +516,7 @@ void *
 Parrot_gc_allocate_pmc_attributes(PARROT_INTERP, ARGMOD(PMC *pmc))
 {
     ASSERT_ARGS(Parrot_gc_allocate_pmc_attributes)
+    Parrot_warn_experimental(interp, "Parrot_gc_allocate_pmc_attributes is experimental");
     return interp->gc_sys->allocate_pmc_attributes(interp, pmc);
 }
 
@@ -532,6 +533,7 @@ void
 Parrot_gc_free_pmc_attributes(PARROT_INTERP, ARGMOD(PMC *pmc))
 {
     ASSERT_ARGS(Parrot_gc_free_pmc_attributes)
+    Parrot_warn_experimental(interp, "Parrot_gc_free_pmc_attributes is experimental");
     interp->gc_sys->free_pmc_attributes(interp, pmc);
 }
 
